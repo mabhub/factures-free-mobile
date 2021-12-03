@@ -7,7 +7,7 @@ import readlineSync from 'readline-sync';
 
 
 const freeId = process.env.FREEMOBILE_ID || readlineSync.question(`Identifiant ? `);
-const pwd = process.env.FREEMOBILE_PWD || readlineSync.question(`Mot de passe (${freeId}) ? `, { hideEchoBack: true });
+const pwd = process.env.FREEMOBILE_PWD || readlineSync.question(`Mot de passe ? `, { hideEchoBack: true });
 
 if (!pwd || !freeId) {
   process.exit();
